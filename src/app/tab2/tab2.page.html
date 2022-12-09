@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true" color="medium">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">favoritos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngFor="let imagen of imagen" color="dark">
+    <img [src]="imagen.url" />
+    <ion-card-header>
+      <ion-card-subtitle>Cajas 2022</ion-card-subtitle>
+      <ion-button color="warning">ver</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
